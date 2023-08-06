@@ -1,0 +1,15 @@
+# Exclude source files
+/src
+
+# Exclude development files
+/node_modules
+/tsconfig.json
+
+# Exclude test files
+/*.test.*
+/*.spec.*
+
+# Exclude editor configuration
+/.vscode
+/.idea
+/.sublime
