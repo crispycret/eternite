@@ -31,7 +31,9 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     },
-    "./*": "./dist/*",
-    "./**/*": "./dist/**/*"
+    "./hooks": "./dist/hooks/index.js",
+    "./utils": "./dist/utils/index.js",
+    "./*": "./dist/*.js",
+    "./**/*": "./dist/**/*.js"
   }
 }
