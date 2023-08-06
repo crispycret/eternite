@@ -1,6 +1,6 @@
 {
   "name": "eternite",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Node based tooling that includes custom react hooks, system utilities, utility functions, search algorithims and data structures.",
   "scripts": {
     "build": "tsc",
