@@ -1,15 +1,15 @@
 {
   "name": "eternite",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Node based tooling that includes custom react hooks, system utilities, utility functions, search algorithms, and data structures.",
   "scripts": {
-    "build": "tsc --declaration --outDir dist", 
+    "build": "tsc --declaration --outDir dist",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "author": "Brandon Nadeau",
   "license": "MIT",
-  "type": "module", 
+  "type": "module",
   "dependencies": {
     "react": "^18.2.0",
     "react-router-dom": "^6.14.2"
@@ -22,10 +22,11 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
-
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "files": ["dist"], 
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -36,5 +37,4 @@
     "./*": "./dist/*.js",
     "./**/*": "./dist/**/*.js"
   }
-
 }
