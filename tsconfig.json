@@ -1,23 +1,28 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 16",
+  "_version": "16.14.0",
+
   "compilerOptions": {
-    "target": "es6",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es2022",
+    "lib": ["es2023", "dom", "dom.iterable", "esnext"],
+    "module": "Node16",
     "allowJs": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     // "noEmit": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "node16",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react",
     "incremental": true,
     "declaration": true,
-    "declarationDir": "dist",
-    "outDir": "./dist",
-    "rootDir": "./src"
+    "outDir": "./dist"
   },
-  "include": ["src"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
+
+// "rootDir": "./src"
+// "skipLibCheck": true,

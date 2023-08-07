@@ -23,17 +23,16 @@
     "typescript": "^5.1.6"
   },
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    },
+    ".":  "./dist/index.js",
     "./hooks": "./dist/hooks/index.js",
+    "./hooks/*": "./dist/hooks/*.js",
     "./utils": "./dist/utils/index.js",
+    "./utils/*": "./dist/utils/*.js",
     "./*": "./dist/*.js",
     "./**/*": "./dist/**/*.js"
   }
