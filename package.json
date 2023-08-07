@@ -3,20 +3,12 @@
   "version": "0.1.1",
   "description": "Node based tooling that includes custom react hooks, system utilities, utility functions, search algorithms, and data structures.",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --declaration --outDir dist", 
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "author": "Brandon Nadeau",
   "license": "MIT",
-  "exports": {
-    ".": "./dist/index.js",
-    "./hooks": "./dist/hooks/index.js",
-    "./utils": "./dist/utils/index.js",
-    "./*": "./dist/*.js",
-    "./**/*": "./dist/**/*.js"
-  },
-  "main": "dist/index.js",
   "type": "module", 
   "dependencies": {
     "react": "^18.2.0",
@@ -30,5 +22,19 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   },
-  "files": ["dist"]
+
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": ["dist"], 
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./hooks": "./dist/hooks/index.js",
+    "./utils": "./dist/utils/index.js",
+    "./*": "./dist/*.js",
+    "./**/*": "./dist/**/*.js"
+  }
+
 }
