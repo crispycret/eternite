@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+// const { useEffect, useState } = require('react');
+
 
 /**
  * @summary A hook that detects if the user has scrolled to the top of the page or bottom of the page.

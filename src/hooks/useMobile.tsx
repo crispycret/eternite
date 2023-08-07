@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { debounce } from "../utils/eventUtils";
 
+// const { useEffect, useState } = require("react");
+// const { debounce } = require("../utils/eventUtils");
+
 
 /**
  * @summary A hook that detects if the user is on a mobile device. Used to conditionally render components based on the user's device.

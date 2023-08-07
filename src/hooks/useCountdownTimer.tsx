@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 
+// const { useState, useEffect } = require('react');
 
 /**
  * @summary A hook that counts down from a given number of seconds and runs a callback function when the timer reaches 0.
@@ -75,7 +76,7 @@ const useCountdownTimer = (defaultWaitSeconds=5) => {
         // In this case, the setInterval() function is used to update the remainingTime every second.
         // After the remainingTime reaches 0, the setInterval() function is stopped and the callback function, doAfter(), is called.
         const __intervalId = setInterval(() => {
-            setRemainingTime(prevRemainingTime => {
+            setRemainingTime((prevRemainingTime: any) => {
                 const updatedTime = prevRemainingTime - 1000;
                 if (updatedTime <= 0) {
                     clearInterval(__intervalId); // Stop the interval when remainingTime reaches 0
