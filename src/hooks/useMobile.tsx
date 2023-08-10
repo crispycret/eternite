@@ -19,12 +19,24 @@ export const useMobile = (maxMobileWidth=988) => {
     // const maxMobileWidth = 988;
     
     const [mobile, setMobile] = useState(false);
-    const [isPortrait, setIsPortrait] = useState(window.innerWidth < window.innerHeight);
 
+    const [isPortrait, setIsPortrait] = useState(false);
+
+    /**
+     * @description When this component mounts, set the mobile and isPortrait states based on the window object.
+     * This is necessary because the window object is not available on the server-side.
+     */
+    useEffect(() => {
+        // States are set again on client-side because states are dependdant on window object. 
+        setMobile(window.innerWidth <= maxMobileWidth);
+        setIsPortrait(window.innerWidth < window.innerHeight);
+    }, [])
+    
     /**
      * @description When this component mounts, add an event listener for orientation change and update the isPortrait and isLandscape states accordingly.
      */
     useEffect(() => {
+
         const handleOrientationChange = () => {
             setIsPortrait(window.innerWidth < window.innerHeight);
         };

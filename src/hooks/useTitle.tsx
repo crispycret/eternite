@@ -9,9 +9,6 @@ import { useEffect } from 'react';
  */ 
 export const useTitle = (title: string): void => {
 
-    const defaultTitle = document.title
-    
-
     useEffect(() => {
 
         const prevTitle = document.title
