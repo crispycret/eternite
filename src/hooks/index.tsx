@@ -1,10 +1,10 @@
 
-import useCountdownTimer from './useCountdownTimer.js';
-import useMobile from './useMobile.js';
-import usePage from './usePage.js';
-import usePosition from './usePosition.js';
-import useTitle from './useTitle.js';
-import useToggle from './useToggle.js';
+import useCountdownTimer from './useCountdownTimer';
+import useMobile from './useMobile';
+import usePage from './usePage';
+import usePosition from './usePosition';
+import useTitle from './useTitle';
+import useToggle from './useToggle';
 
 // Create a hooks object that has all the hooks defined in it that will be the default export for this file
 // import hooks from 'eternite/hooks';

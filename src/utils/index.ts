@@ -1,5 +1,5 @@
-import * as clientInfo from "./clientInfo.tsx"
-import * as eventUtils from "./eventUtils.tsx"
+import * as clientInfo from "./clientInfo"
+import * as eventUtils from "./eventUtils"
 
 const utils = {
     clientInfo,
