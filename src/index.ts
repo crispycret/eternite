@@ -1,7 +1,16 @@
 
-import * as hooks from './hooks/index';
-import * as utils from './utils/index';
+import hooks from './hooks/index.js';
+import utils from './utils/index.js';
 
-export { hooks, utils }
-export default { hooks, utils }
+const eternite = {
+    hooks,
+    utils
+}
+
+export { 
+    eternite as default,
+    hooks, 
+    utils 
+}
+// export default { hooks, utils }
 

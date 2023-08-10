@@ -1,5 +1,5 @@
-import * as clientInfo from "./clientInfo"
-import * as eventUtils from "./eventUtils"
+import * as clientInfo from "./clientInfo.js"
+import * as eventUtils from "./eventUtils.js"
 
 const utils = {
     clientInfo,
