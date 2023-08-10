@@ -1,16 +1,16 @@
-import * as clientInfo from "./clientInfo"
-import * as eventUtils from "./eventUtils"
+import * as clientInfo from "./clientInfo.tsx"
+import * as eventUtils from "./eventUtils.tsx"
+
+const utils = {
+    clientInfo,
+    eventUtils
+}
 
 export {
     clientInfo,
     eventUtils
 }
 
-
-
-// const clientInfo = require("./clientInfo")
-// const eventUtils = require("./eventUtils")
-
-// module.exports = { clientInfo, eventUtils };
+export default utils
 
 
